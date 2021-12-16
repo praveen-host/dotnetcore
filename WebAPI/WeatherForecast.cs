@@ -6,7 +6,7 @@ namespace WebAPI
     {
 
         //Comment to check 
-        public DateTime1 Date { get; set; }
+        public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
 
