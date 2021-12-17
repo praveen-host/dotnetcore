@@ -23,7 +23,7 @@ jobs:
     - name: Build the Docker Image
       run: |
         docker build . --file Dockerfile --tag 0001101988/dotnet-webapi:latest
-        docker tag 0001101988/dotnet-webapi:latest 0001101988/dotnet-webapi-image:latest
+        docker tag 0001101988/dotnet-webapi:latest 0001101988/dotnet-webapi:latest
         #vampi_docker:latest ${{secrets.DOCKER_USER}}/vampi_docker:latest
     - name: Docker Push
-      run: docker push 0001101988/dotnet-webapi-image:latest
+      run: docker push 0001101988/dotnet-webapi:latest
