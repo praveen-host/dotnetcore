@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker Image
       run: docker build . --file Dockerfile --tag dotnet-webapi:dotnet-webapi
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/dotnet-webapi
+      run: docker push ${{secrets.DOCKER_USER}}/dotnet-webapi:dotnet-webapi
