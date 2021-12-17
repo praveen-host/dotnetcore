@@ -21,6 +21,6 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker Image
-      run: docker build . --file Dockerfile --tag dotnet-webapi:dotnet-webapi
+      run: docker build . --file Dockerfile --tag tagname
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/dotnet-webapi:dotnet-webapi
+      run: docker push 0001101988/dotnet-webapi:tagname
